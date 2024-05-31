@@ -3,6 +3,18 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Specific files
+setup.py
+
+# config.json
+
+# Exception in ignored directory
+# Ignore everything in the 'data' directory
+data/
+# Except for txt files
+!data/*.txt
+
+
 # C extensions
 *.so
 
