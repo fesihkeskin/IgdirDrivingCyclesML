@@ -5,15 +5,13 @@ __pycache__/
 
 # Specific files
 setup.py
-
 # config.json
 
 # Exception in ignored directory
 # Ignore everything in the 'docs' directory
 docs/
-# Except for txt files
+# Ignore everything in the 'raw' directory except for txt files
 !data/raw/*.txt
-
 
 # C extensions
 *.so
