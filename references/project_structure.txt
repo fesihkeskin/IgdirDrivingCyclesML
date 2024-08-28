@@ -1,0 +1,67 @@
+IgdirDrivingCyclesML/
+# Root of the project
+├── data/
+│    
+│   ├── processed/
+│   │    
+│   └── raw/
+│        
+│       ├── D01.txt
+│       ├── D02.txt
+│       ├── D03.txt
+│       ├── D04.txt
+│       ├── D05.txt
+│       ├── D06.txt
+│       ├── D07.txt
+│       ├── D08.txt
+│       ├── D09.txt
+│       ├── D10.txt
+│       ├── D11.txt
+│       ├── D12.txt
+│       ├── D13.txt
+│       ├── D14.txt
+│       ├── D15.txt
+│       ├── D16.txt
+│       ├── D17.txt
+│       ├── D18.txt
+│       └── D19.txt
+├── docs/
+│    
+├── models/
+│    
+├── notebooks/
+│    
+├── references/
+│    
+│   ├── create_project_structure.py
+│   └── project_structure.txt
+├── reports/
+│    
+│   └── figures/
+│        
+├── src/
+│    
+│   ├── data/
+│   │    
+│   │   ├── __init__.py
+│   │   └── make_dataset.py
+│   ├── features/
+│   │    
+│   │   ├── __init__.py
+│   │   └── build_features.py
+│   ├── models/
+│   │    
+│   │   ├── __init__.py
+│   │   ├── predict_model.py
+│   │   └── train_model.py
+│   ├── visualization/
+│   │    
+│   │   ├── __init__.py
+│   │   ├── plot_settings.py
+│   │   └── visualize.py
+│   ├── __init__.py
+│   └── main_xgboost.py
+├── README.md
+├── environment.yml
+├── requirements.txt
+└── setup.py
