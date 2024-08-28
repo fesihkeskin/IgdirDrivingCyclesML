@@ -45,7 +45,8 @@ project_root = os.getcwd()
 print(f'Current working directory: {project_root}')
 
 # Add folders or file extensions to exclude
-exclude_list = ['train','val','.jpg','.JPG','.jpeg','.JPEG','.png','__pycache__', '.git', '.DS_Store', '.pyc','.sh']
+# exclude_list = ['train','val','.jpg','.JPG','.jpeg','.JPEG','.png','__pycache__', '.git', '.DS_Store', '.pyc','.sh']
+exclude_list = []
 print(f"{os.path.basename(project_root)}/")
 print("# Root of the project")
 generate_tree(project_root, exclude=exclude_list)

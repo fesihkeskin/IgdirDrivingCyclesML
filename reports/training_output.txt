@@ -1,0 +1,7 @@
+2024-08-29 01:07:07,380 - INFO - Training the XGBoost model with early stopping...
+2024-08-29 01:07:09,260 - INFO - Validation RMSE values saved to reports\validation_rmse.txt
+2024-08-29 01:07:09,992 - INFO - Validation metrics saved to reports\validation_metrics.txt
+2024-08-29 01:07:10,550 - WARNING - The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+2024-08-29 01:07:12,350 - INFO - Test metrics saved to reports\test_metrics.txt
+2024-08-29 01:07:12,854 - WARNING - The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+2024-08-29 01:07:13,311 - INFO - Model saved to models\xgboost_model.pkl

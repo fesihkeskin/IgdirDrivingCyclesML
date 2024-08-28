@@ -3,6 +3,15 @@
 import os
 import pandas as pd
 import joblib
+import sys
+# Get the absolute path of the parent directory
+current_dir = os.path.dirname(os.path.abspath(__file__))
+parent_dir = os.path.join(current_dir, '..', '..')
+
+# Add the parent directory to the sys.path
+sys.path.append(parent_dir)
+
+# Now you should be able to import the src module
 import src.visualization.visualize as viz
 
 def load_model(model_dir):

@@ -4,6 +4,9 @@ IgdirDrivingCyclesML/
 │    
 │   ├── processed/
 │   │    
+│   │   ├── combined_data.csv
+│   │   ├── cycle_lengths.txt
+│   │   └── features_data.csv
 │   └── raw/
 │        
 │       ├── D01.txt
@@ -29,6 +32,7 @@ IgdirDrivingCyclesML/
 │    
 ├── models/
 │    
+│   └── xgboost_model.pkl
 ├── notebooks/
 │    
 ├── references/
@@ -37,10 +41,36 @@ IgdirDrivingCyclesML/
 │   └── project_structure.txt
 ├── reports/
 │    
-│   └── figures/
-│        
+│   ├── figures/
+│   │    
+│   │   ├── feature_importance.eps
+│   │   ├── feature_importance.png
+│   │   ├── manual_test_set__actual_vs_predicted_speed.eps
+│   │   ├── manual_test_set__actual_vs_predicted_speed.png
+│   │   ├── manual_test_set__residuals.eps
+│   │   ├── manual_test_set__residuals.png
+│   │   ├── test__actual_vs_predicted_speed.eps
+│   │   ├── test__actual_vs_predicted_speed.png
+│   │   ├── test__residuals.eps
+│   │   ├── test__residuals.png
+│   │   ├── train_val_test_split.eps
+│   │   ├── train_val_test_split.png
+│   │   ├── validation__actual_vs_predicted_speed.eps
+│   │   ├── validation__actual_vs_predicted_speed.png
+│   │   ├── validation__residuals.eps
+│   │   ├── validation__residuals.png
+│   │   ├── validation_rmse.eps
+│   │   └── validation_rmse.png
+│   ├── predictions.csv
+│   ├── test_metrics.txt
+│   ├── training_output.txt
+│   ├── validation_metrics.txt
+│   └── validation_rmse.txt
 ├── src/
 │    
+│   ├── __pycache__/
+│   │    
+│   │   └── __init__.cpython-312.pyc
 │   ├── data/
 │   │    
 │   │   ├── __init__.py
@@ -52,15 +82,20 @@ IgdirDrivingCyclesML/
 │   ├── models/
 │   │    
 │   │   ├── __init__.py
+│   │   ├── manual_split_test.py
 │   │   ├── predict_model.py
 │   │   └── train_model.py
 │   ├── visualization/
 │   │    
+│   │   ├── __pycache__/
+│   │   │    
+│   │   │   ├── __init__.cpython-312.pyc
+│   │   │   ├── plot_settings.cpython-312.pyc
+│   │   │   └── visualize.cpython-312.pyc
 │   │   ├── __init__.py
 │   │   ├── plot_settings.py
 │   │   └── visualize.py
-│   ├── __init__.py
-│   └── main_xgboost.py
+│   └── __init__.py
 ├── README.md
 ├── environment.yml
 ├── requirements.txt
