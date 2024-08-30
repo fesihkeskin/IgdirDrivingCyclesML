@@ -43,9 +43,13 @@ def main():
     
     reports_dir = "reports"
     save_predictions(predictions_df, reports_dir)
-
+    
+    # to get following values first run manual_split_test.py script
+    train_size=13563
+    val_size=3087
     # Visualize predictions
-    viz.plot_actual_vs_predicted(predictions_df['Speed'], predictions_df['Predicted_Speed'])
+    # viz.plot_actual_vs_predicted(predictions_df['Speed'], predictions_df['Predicted_Speed'],title='All prediction: Actual vs Predicted', save=False,)
+    viz.plot_actual_vs_predicted_with_split(predictions_df['Speed'], predictions_df['Predicted_Speed'], train_size, val_size, title='All predictions: Actual vs Predicted', save=True)
 
 if __name__ == "__main__":
     main()

@@ -10,6 +10,7 @@ setup.py
 # Exception in ignored directory
 # Ignore everything in the 'docs' directory
 docs/
+notebooks/
 # Ignore everything in the 'raw' directory except for txt files
 !data/raw/*.txt
 !references/*.txt

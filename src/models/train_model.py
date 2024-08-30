@@ -1,3 +1,5 @@
+# src/models/train_model.py
+
 import os
 import pandas as pd
 import xgboost as xgb
@@ -19,7 +21,6 @@ parent_dir = os.path.join(current_dir, '..', '..')
 # Add the parent directory to the sys.path
 sys.path.append(parent_dir)
 
-# Now you should be able to import the src module
 import src.visualization.visualize as viz
 
 def train_xgboost_model(X_train, y_train, X_val, y_val, n_estimators=100, learning_rate=0.1, early_stopping_rounds=10):
@@ -107,7 +108,8 @@ def main():
 
     # Plot feature importance
     feature_names = X.columns.tolist()  # Get feature names from the dataset
-    viz.plot_feature_importance(model_speed, feature_names, save=True)
+    # Plot the top 5 most important features
+    viz.plot_feature_importance(model_speed, feature_names, top_n=5, save=True)
     
     # Evaluate on test set
     y_test_pred, test_rmse, test_mae = evaluate_model(model_speed, X_test, y_test)

@@ -1,3 +1,5 @@
+# src/models/manual_split_test.py
+
 import os
 import numpy as np
 import pandas as pd
@@ -93,8 +95,14 @@ def main():
     viz.plot_train_val_test_split(X_train['Speed'], X_val['Speed'], y_test, train_size, val_size, save=True)
 
     # Plot the results
-    viz.plot_actual_vs_predicted(y_test, y_test_pred, title="Manual Test Set: Actual vs Predicted Speed", save=True)
-    viz.plot_residuals(y_test, y_test_pred, title="Manual Test Set: Residuals", save=True)
+    # viz.plot_actual_vs_predicted(y_test, y_test_pred, title="Manual Test Set: Actual vs Predicted Speed", save=True)
+    # viz.plot_residuals(y_test, y_test_pred, title="Manual Test Set: Residuals", save=True)
+    
+    # Plot last cycle
+    y_test_last_cylce = y_test.loc[18588:].reset_index(drop=True)
+    y_test_pred_last_cylce = y_test_pred[1938:]
+    viz.plot_actual_vs_predicted(y_test_last_cylce, y_test_pred_last_cylce, title="Test Set: Actual vs Predicted Speed", save=True)
+    viz.plot_residuals(y_test_last_cylce, y_test_pred_last_cylce, title="Test Set: Residuals", save=True)
 
 if __name__ == "__main__":
     main()

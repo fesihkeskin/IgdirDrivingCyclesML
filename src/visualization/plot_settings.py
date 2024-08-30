@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 def set_plot_style():
     plt.style.use('seaborn-v0_8-darkgrid')
-    plt.rcParams['figure.figsize'] = (12, 4)  # Adjusted figure size
+    plt.rcParams['figure.figsize'] = (8, 6)  # Adjusted figure size
     plt.rcParams['axes.titlesize'] = 16
     plt.rcParams['axes.labelsize'] = 14
     plt.rcParams['xtick.labelsize'] = 12

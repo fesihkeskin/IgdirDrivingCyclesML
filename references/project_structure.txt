@@ -27,7 +27,8 @@ IgdirDrivingCyclesML/
 │       ├── D16.txt
 │       ├── D17.txt
 │       ├── D18.txt
-│       └── D19.txt
+│       ├── D19.txt
+│       └── segment_sizes.mat
 ├── docs/
 │    
 ├── models/
@@ -35,6 +36,7 @@ IgdirDrivingCyclesML/
 │   └── xgboost_model.pkl
 ├── notebooks/
 │    
+│   └── driving_cycle.ipynb
 ├── references/
 │    
 │   ├── create_project_structure.py
@@ -43,16 +45,22 @@ IgdirDrivingCyclesML/
 │    
 │   ├── figures/
 │   │    
-│   │   ├── feature_importance.eps
-│   │   ├── feature_importance.png
-│   │   ├── manual_test_set__actual_vs_predicted_speed.eps
-│   │   ├── manual_test_set__actual_vs_predicted_speed.png
-│   │   ├── manual_test_set__residuals.eps
-│   │   ├── manual_test_set__residuals.png
+│   │   ├── all_predictions__actual_vs_predicted_with_split.eps
+│   │   ├── all_predictions__actual_vs_predicted_with_split.png
+│   │   ├── speed_vs_acceleration.eps
+│   │   ├── speed_vs_acceleration.png
 │   │   ├── test__actual_vs_predicted_speed.eps
 │   │   ├── test__actual_vs_predicted_speed.png
 │   │   ├── test__residuals.eps
 │   │   ├── test__residuals.png
+│   │   ├── test_set__actual_vs_predicted_speed.eps
+│   │   ├── test_set__actual_vs_predicted_speed.png
+│   │   ├── test_set__residuals.eps
+│   │   ├── test_set__residuals.png
+│   │   ├── time_vs_speed_d01.eps
+│   │   ├── time_vs_speed_d01.png
+│   │   ├── top_5_feature_importance.eps
+│   │   ├── top_5_feature_importance.png
 │   │   ├── train_val_test_split.eps
 │   │   ├── train_val_test_split.png
 │   │   ├── validation__actual_vs_predicted_speed.eps
@@ -74,6 +82,7 @@ IgdirDrivingCyclesML/
 │   ├── data/
 │   │    
 │   │   ├── __init__.py
+│   │   ├── del_specific_files.py
 │   │   └── make_dataset.py
 │   ├── features/
 │   │    
