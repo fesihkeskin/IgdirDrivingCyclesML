@@ -4,4 +4,3 @@ matplotlib
 tensorflow
 scipy
 dtaidistance
--e .
