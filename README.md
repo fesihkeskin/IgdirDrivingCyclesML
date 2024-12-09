@@ -62,12 +62,6 @@ IgdirDrivingCyclesML/
    ```bash
    pip install -r requirements.txt
    ```
-
-3. **Setup the project**:
-   ```bash
-   python setup.py install
-   ```
-
 ---
 
 ## Usage
