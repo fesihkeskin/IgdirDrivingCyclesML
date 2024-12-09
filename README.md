@@ -35,6 +35,10 @@ IgdirDrivingCyclesML/
 └── requirements.txt                # Python dependencies
 ```
 
+## Credits and Acknowledgments
+
+The Jupyter notebook `notebooks/driving_cycle.ipynb` is adapted from [https://github.com/fesihkeskin/Driving_Cycle](https://github.com/fesihkeskin/Driving_Cycle). This adaptation was made to facilitate comparisons between our study and the methods presented in [https://doi.org/10.1177/03611981241260700](https://doi.org/10.1177/03611981241260700).
+
 ---
 
 ## Installation
