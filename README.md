@@ -116,6 +116,9 @@ If you use this repository in your research or work, please cite our paper:
   doi       = {10.1109/idap64064.2024.10710756},
 }
 ```
+```diff
+F. Keskin, "Advanced Driving Cycle Generation Using XGBoost: A Case Study in Iğdır, Türkiye," 2024 8th International Artificial Intelligence and Data Processing Symposium (IDAP), Malatya, Turkiye, 2024, pp. 1-6, doi: 10.1109/IDAP64064.2024.10710756.
+```
 
 ---
 
