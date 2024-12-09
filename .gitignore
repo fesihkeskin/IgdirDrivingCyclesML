@@ -13,7 +13,7 @@ docs/
 # notebooks/
 # Ignore everything in the 'raw' directory except for txt files
 # !data/raw/*.txt
-# !references/*.txt
+!references/*.txt
 
 # C extensions
 *.so
